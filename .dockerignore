@@ -5,11 +5,17 @@
 # prefix. They need a handful of patches and data files out of it; everything
 # else under there is experiment output, gigabytes of it.
 #
-# The other three submodules each build from their own directory as context
-# (see tools/build.sh), so nothing here ever needs them.
+# AFLplusplus_reusing and Reusing_scanner each build from their own directory
+# as context (see tools/build.sh), so nothing here ever needs them.
 AFLplusplus_reusing/
-LibAFL_reusing/
 Reusing_scanner/
+
+# LibAFL_reusing is the exception: the forkserver_libafl_reusing Dockerfiles COPY
+# it out of this context rather than cloning it, so that a local edit lands in
+# the image without a push and without docker serving a cached clone of an
+# older commit. 12 MB of sources; its history and build output stay out.
+LibAFL_reusing/.git/
+LibAFL_reusing/**/target/
 
 Reusing-unibench_build/
 !Reusing-unibench_build/aflplusplus/
@@ -18,7 +24,8 @@ Reusing-unibench_build/
 !Reusing-unibench_build/aflplusplus-reusing_fuzzer_only/
 !Reusing-unibench_build/reusing-scanner-target/
 !Reusing-unibench_build/forkserver_libafl/
-!Reusing-unibench_build/forkserver_libafl_reusing/
+!Reusing-unibench_build/forkserver_libafl_reusing-target/
+!Reusing-unibench_build/forkserver_libafl_reusing_fuzzer_only/
 !Reusing-unibench_build/forkserver_storfuzz/
 !Reusing-unibench_build/coverage/
 !Reusing-unibench_build/ffmpeg/
