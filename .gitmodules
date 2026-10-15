@@ -1,0 +1,16 @@
+[submodule "AFLplusplus_reusing"]
+	path = AFLplusplus_reusing
+	url = https://github.com/lysgoup/AFLplusplus_reusing.git
+	branch = external-taint-worker
+[submodule "LibAFL_reusing"]
+	path = LibAFL_reusing
+	url = https://github.com/lysgoup/LibAFL_reusing.git
+	branch = storfuzz-comparison
+[submodule "Reusing_scanner"]
+	path = Reusing_scanner
+	url = https://github.com/lysgoup/Reusing_scanner.git
+	branch = main
+[submodule "Reusing-unibench_build"]
+	path = Reusing-unibench_build
+	url = https://github.com/lysgoup/Reusing-unibench_build.git
+	branch = master

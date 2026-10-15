@@ -1,0 +1,28 @@
+# Build context for the unibench target images.
+#
+# Reusing-unibench_build's target Dockerfiles run with this directory as their
+# context -- that is why their COPY paths carry the Reusing-unibench_build/
+# prefix. They need a handful of patches and data files out of it; everything
+# else under there is experiment output, gigabytes of it.
+#
+# The other three submodules each build from their own directory as context
+# (see tools/build.sh), so nothing here ever needs them.
+AFLplusplus_reusing/
+LibAFL_reusing/
+Reusing_scanner/
+
+Reusing-unibench_build/
+!Reusing-unibench_build/aflplusplus/
+!Reusing-unibench_build/aflplusplus-cmplog/
+!Reusing-unibench_build/aflplusplus-reusing-target/
+!Reusing-unibench_build/aflplusplus-reusing_fuzzer_only/
+!Reusing-unibench_build/reusing-scanner-target/
+!Reusing-unibench_build/forkserver_libafl/
+!Reusing-unibench_build/forkserver_libafl_reusing/
+!Reusing-unibench_build/forkserver_storfuzz/
+!Reusing-unibench_build/coverage/
+!Reusing-unibench_build/ffmpeg/
+!Reusing-unibench_build/tools/volume/seeds/
+
+_build_cache/
+target/
