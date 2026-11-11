@@ -9,6 +9,9 @@
 # as context (see tools/build.sh), so nothing here ever needs them.
 AFLplusplus_reusing/
 Reusing_scanner/
+# The FuzzBench fork builds from its own directory; no unibench image needs it,
+# and its .venv alone is over a gigabyte.
+Reusing-StorFuzz-fuzzbench/
 
 # LibAFL_reusing is the exception: the forkserver_libafl_reusing Dockerfiles COPY
 # it out of this context rather than cloning it, so that a local edit lands in

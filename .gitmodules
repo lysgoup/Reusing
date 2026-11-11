@@ -14,3 +14,7 @@
 	path = Reusing-unibench_build
 	url = https://github.com/lysgoup/Reusing-unibench_build.git
 	branch = master
+[submodule "Reusing-StorFuzz-fuzzbench"]
+	path = Reusing-StorFuzz-fuzzbench
+	url = https://github.com/lysgoup/Reusing-StorFuzz-fuzzbench.git
+	branch = reusing
