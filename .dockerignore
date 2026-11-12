@@ -30,6 +30,7 @@ Reusing-unibench_build/
 !Reusing-unibench_build/forkserver_libafl_reusing-target/
 !Reusing-unibench_build/forkserver_libafl_reusing_fuzzer_only/
 !Reusing-unibench_build/forkserver_storfuzz/
+!Reusing-unibench_build/forkserver_storfuzz_fbconfig/
 !Reusing-unibench_build/coverage/
 !Reusing-unibench_build/ffmpeg/
 !Reusing-unibench_build/tools/volume/seeds/
